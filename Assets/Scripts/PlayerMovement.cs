@@ -33,6 +33,10 @@ public class PlayerMovement : MonoBehaviour
     private bool CheckCollisions(Vector2 direction) {
         // Raycast in direction of movement
 
-        Physics.Raycast()
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity)) {
+            
+        }
     }
 }
